@@ -3,7 +3,7 @@ module.exports = removeImports({
   reactStrictMode: true,
   webpack5: true,
   webpack: (config) => {
-    config.resolve.fallback = { fs: false, constants: false, assert: false, os: false, process: false };
+    config.resolve.fallback = {};
     return config;
   },
 });
